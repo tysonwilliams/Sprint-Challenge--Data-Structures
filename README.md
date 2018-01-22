@@ -7,12 +7,17 @@
 ## Questions
 1. What are the order of insertions/removals for the following data structures?
    - **Stack**
+     * Stacks follow the Last In, First Out (LIFO) principle. In JavaScript this can be utilized with the the `.push` and `.pop` methods.
    - **Queue**
+     * Queues follow the the First In, First Out (FIFO) principle. In general terms these are the `.enqueue` and `.dequeue` operations. In JavaScript this can be utilized with the `.unshift` and `.pop` methods.
 2. What is the retreival time complexity for the following data structures?
    - **Linked List**
+     * O(n)
    - **Hash Table**
+     * O(n)
    - **Binary Search Trees**
-2. What are some advantages to using a Hash Tables over an array in JavaScript?
-
+     * O(log n)
+3. What are some advantages to using a Hash Tables over an array in JavaScript?
+  * Search is faster with hash tables. In hash tables return the same index # for a key and knows exactly where to find the value, or the bucket location.
 ## Challenge
 If you take a look at the hash-table.js file you'll notice that it has solution code in it. You'll also notice that if you run the tests, they all pass. Your job is to refactor this hash table solution to use **linked lists** for buckets instead of arrays. You're welcome to add another class to the helper file, following the pattern used with LimitedArray.
